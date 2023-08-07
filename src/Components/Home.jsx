@@ -1,4 +1,8 @@
 import React from 'react'
+import Quotes from './Quotes'
+import About from './About'
+import Service from './Service'
+import Features from '../Pages/Features'
 
 const Home = () => {
   return (
@@ -61,6 +65,10 @@ const Home = () => {
     </button>
   </div>
 </div>
+{/* <About/> */}
+<Quotes/>
+{/* <Features/>
+<Service/> */}
 
   
   </>

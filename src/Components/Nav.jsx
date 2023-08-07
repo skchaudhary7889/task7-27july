@@ -1,8 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import Topheader from './Topheader';
+
+
+
+
 
 const Nav = () => {
   return (
     <>
+    <Topheader/>
     
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
   <a
@@ -21,16 +28,16 @@ const Nav = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarCollapse">
     <div className="navbar-nav ms-auto p-4 p-lg-0">
-      <a href="index.html" className="nav-item nav-link">
+      <a href="/" className="nav-item nav-link active">
         Home
       </a>
-      <a href="about.html" className="nav-item nav-link active">
+      <a href="/about" className="nav-item nav-link ">
         About
       </a>
-      <a href="service.html" className="nav-item nav-link">
+      <a href="/services" className="nav-item nav-link">
         Services
       </a>
-      <a href="project.html" className="nav-item nav-link">
+      <a href="/project" className="nav-item nav-link">
         Projects
       </a>
       <div className="nav-item dropdown">
@@ -42,7 +49,7 @@ const Nav = () => {
           Pages
         </a>
         <div className="dropdown-menu bg-light m-0">
-          <a href="feature.html" className="dropdown-item">
+          <a href="/feature" className="dropdown-item">
             Features
           </a>
           <a href="quote.html" className="dropdown-item">
@@ -59,7 +66,7 @@ const Nav = () => {
           </a>
         </div>
       </div>
-      <a href="contact.html" className="nav-item nav-link">
+      <a href="/contact" className="nav-item nav-link">
         Contact
       </a>
     </div>
